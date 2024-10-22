@@ -2,6 +2,9 @@
 
 In this section, let's create a new project in **Visual Studio** Or with **Terminal & VSCode**.
 
+- <a href="#Microsoft Visual Studio">Visual Studio Code</a>
+- <a href="#terminal--vs-code">VScode & Terminal</a>
+
 ## Microsoft Visual Studio
 
 ### 1. Create a new project
