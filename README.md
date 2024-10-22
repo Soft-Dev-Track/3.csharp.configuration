@@ -1,4 +1,4 @@
-# Configuration
+# 3.Configuration
 
 In this section, let's create a new project in **Visual Studio** Or with **Terminal & VSCode**.
 
