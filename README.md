@@ -2,22 +2,25 @@
 
 In this section, let's create a new project in **Visual Studio** Or with **Terminal & VSCode**.
 
-- <a href="#Microsoft Visual Studio">Visual Studio Code</a>
-- <a href="#terminal--vs-code">VScode & Terminal</a>
+1. <a href="#1-microsoft-visual-studio">Visual Studio Code</a>
+2. <a href="#2-terminal--vs-code">VScode & Terminal</a>
+3. <a href="#3-unit-tests">Unit Tests Visual Studio Code</a>
+3. <a href="#4-unit-tests-in-your-vscode-project">Unit Tests in your VSCode project</a>
 
-## Microsoft Visual Studio
+## 1. Microsoft Visual Studio
 
-### 1. Create a new project
+### A. Create a new project
+Open Visual Studio code and create a new project (also called `solution`).
 
 <img src="assets/get_started.png" width=400/>
 
-### 2. Select **Console App**
+### B. Select **Console App**
 
 <img src="assets/new_project.png" width=1000/>
 
 Select `Console App`
 
-### 3. Configure your new project
+### C. Configure your new project
 
 <img src="assets/configure.png" width=500/>
 
@@ -27,20 +30,22 @@ Select `Console App`
 
 So, in this case it will be : `C:\Users\BeCode\OneDrive\Documents\Courses`
 
-### 4. Additional info
+### D. Additional info
 
 <img src="assets/additional.png" width=500/>
 
 Please, check `Do not use top-level statements`
 
-### 5. You are now ready
+### E. You are now ready
 
 <img src="assets/vs.png" width=500/>
 
-## Terminal & Vs Code
+## 2. Terminal & Vs Code
 
 ```bash
 # Generate the sln file
+mkdir courses
+cd courses
 dotnet new sln -o courses
 ```
 
@@ -55,11 +60,7 @@ dotnet new console -o Fundamentals
 dotnet sln ./courses.sln add ./Fundamentals/Fundamentals.csproj
 ```
 
-Open your **Program.cs** from your Fundamentals.App and update this code by. If you don't understand what is written below, don't worry. We will cover OOP (Object-Oriented Programming) later.
-
-```csharp
-Console.Writeline("Hello World");
-```
+Open your **Program.cs** from your Fundamentals.App and update this code the given code below. If you don't understand what is written below, don't worry. We will cover OOP (Object-Oriented Programming) later.
 
 ```csharp
 namespace fundamentals.App
@@ -68,7 +69,7 @@ namespace fundamentals.App
     {
         public static void Main(string[] args)
         {
-            // Your code here
+           Console.WriteLine("Hello World");
         }
     }
 }
@@ -79,25 +80,25 @@ namespace fundamentals.App
 dotnet run
 ```
 
-## Unit Tests
+## 3. Unit Tests
 
 For all of your exercises, unit tests will be provided. They will be written for you, so you don't need to worry about that. You will find them in each chapter where exercises are presented. Now, let's see how to implement unit tests in your C# projects
 
 ### Microsoft Visual Studio
 
-### 1. Add a new project in your solution
+### A. Add a new project in your solution
 
 <img src="assets/add_new_project.png" width=500/>
 
-### 2. Choose Nunit
+### B. Choose Nunit
 
 <img src="assets/choose_Nunit.png" width=500/>
 
-### 3. Tie the projects
+### C. Tie the projects
 
 <img src="assets/project_reference.png" width=500/>
 
-### 4. Update your code
+### D. Update your code
 
 ```csharp
 
@@ -135,7 +136,7 @@ namespace TestFundamentals
 
 - **Note:** To launch the tests, go to `Test > Run all tests`.
 
-### VSCode
+### 4. Unit Tests in your VSCode project
 
 Go the the root of your project
 
