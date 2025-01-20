@@ -156,3 +156,6 @@ we’ll need to tie this project to our application. First, we’ll add a refere
 cd TestFundamentals
 dotnet add reference ..\Fundamentals\Fundamentals.csproj
 ```
+
+--- 
+![](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHQ5bnQ2ZnhwbGt3bW5oM2NzZXp6ZGlmYXZ5ZzRnbGpvc2p1YzQzdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mEVWxpLznIEKUPI3iH/giphy.gif)
